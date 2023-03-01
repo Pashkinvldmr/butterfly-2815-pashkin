@@ -1,0 +1,42 @@
+.footer {
+  padding: 31px 0;
+  background-color: $color-dark;
+}
+
+.footer-inner {
+  @include inner;
+}
+
+.footer-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.footer-phone {
+  position: absolute;
+  right: 250px;
+  display: inline-block;
+
+  font-family: $font;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 38px;
+
+  text-decoration: none;
+
+  color: #fff;
+}
+
+.footer-icons {
+  position: absolute;
+  right: 0;
+  display: flex;
+  column-gap: 15px;
+}
+
+.footer-icons a {
+  display: inline-block;
+  text-decoration: none;
+  max-height: 26px;
+}

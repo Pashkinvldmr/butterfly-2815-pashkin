@@ -1,0 +1,44 @@
+.header {
+  background-color: $color-dark;
+}
+
+.header-inner {
+  @include inner;
+}
+
+.header-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-nav ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+
+  column-gap: 10px;
+
+  list-style: none;
+}
+
+.header-nav a {
+  display: inline-block;
+  padding: 33px 25px;
+
+  font-family: $font;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+
+  text-transform: uppercase;
+  text-decoration: none;
+
+  color: #fff;
+
+  transition: .2s;
+
+  &:hover {
+    background-color: $color-accent;
+  }
+}

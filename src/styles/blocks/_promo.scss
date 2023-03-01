@@ -1,0 +1,92 @@
+.promo {
+  padding: 130px 0;
+}
+
+.promo-inner {
+  @include inner;
+}
+
+.promo-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.promo-link {
+  font-family: $font;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 24px;
+
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+
+  transition: .2s;
+
+  color: rgba(0, 0, 0, 0.8);
+
+  &:hover {
+    color: $color-accent;
+  }
+}
+
+.promo-title {
+  text-align: center;
+
+  font-family: $font;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 84px;
+
+  color: $color-dark;
+}
+
+.promo-items {
+  margin-top: 100px;
+  margin-bottom: 120px;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 20px;
+  row-gap: 20px;
+
+  ul {
+    padding-bottom: 20px;
+    display: flex;
+    column-gap: 50px;
+    list-style: none;
+    justify-content: center;
+    flex-basis: 100%;
+  }
+}
+
+.promo-item {
+  flex-basis: 25%;
+  position: relative;
+  max-width: 304px;
+  max-height: 304px;
+}
+
+.promo-item img {
+  max-width: 304px;
+  max-height: 304px;
+}
+
+.promo-text {
+  padding: 15px 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  font-family: $font;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33px;
+
+  text-align: center;
+
+  color: #fff;
+
+  background-color: rgba(0, 0, 0, 0.4);
+}
